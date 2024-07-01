@@ -1,0 +1,29 @@
+/* Main Container */
+.container{
+    width: min(100%, 1440px);
+    margin: auto;
+}
+/* Header */
+header{
+    background-color: #758BFD;
+    padding: 52px 98px;
+    justify-content: space-between;
+    display: flex;
+
+}
+.HeaderUl{
+    display: flex;
+}
+.Search{
+    border: 3px solid #FFFFFF;
+    width: 222px;
+    border-radius: 10px;
+}
+.HeaderList{
+    font-family: Ubuntu;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 27.58px;
+    text-align: left;
+    color: #FFFFFF;
+}
