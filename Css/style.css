@@ -1,6 +1,7 @@
 /* Main Container */
 .container{
-    width: min(100%, 1440px);
+    width: min(100%, 1441px);
+    /* For Some Reason if i wrote 1440px here the Section articles would drop donw and make 2 lines,but when i changed 1440 to 1441px everything got better,i cant figure it out */
     margin: auto;
 }
 /* Header */
@@ -12,18 +13,106 @@ header{
 
 }
 .HeaderUl{
-    display: flex;
+    display: flex; 
+    column-gap: 50px;
 }
-.Search{
-    border: 3px solid #FFFFFF;
-    width: 222px;
-    border-radius: 10px;
-}
-.HeaderList{
+
+.inactive{
+    color: #DDEAF8;
     font-family: Ubuntu;
     font-size: 24px;
     font-weight: 500;
     line-height: 27.58px;
-    text-align: left;
+}
+.active{
+    color: #133B3A;
+    font-family: Ubuntu;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 27.58px;
+}
+/* Section */
+.Search{
+    border: 3px solid #FFFFFF;
+    width: 222px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 8px;
+}
+.fa-magnifying-glass{
+    font-size: 32px;
     color: #FFFFFF;
+}
+.MaincSection{
+    width:calc(1244 / 1440 * 100%);
+    margin:94px auto;
+
+}
+.SectionHeader{
+    font-family: Ubuntu;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 36.77px;
+    color: #27187F;
+    margin-bottom: 68px;
+}
+.SecondarySection{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 51px 22px;
+
+}
+.SectionArticles{
+    background-color: #DDEAF8;
+    padding: 33px 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 33px;
+}
+.SectionImages{
+    height: 211px;
+    width: 100%;
+}
+.SectionText{
+    font-family: Ubuntu;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22.98px;
+    color: #133B3A;    
+}
+/* Footer */
+footer{
+    padding: 98px 75px 109px;
+    background-color: #758BFD;
+    display: flex;
+    justify-content: space-between;
+}
+.FooterSectionLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 20px;
+}
+.FooterUl{
+    display: flex;
+    column-gap: 20px;
+}
+.FooterListName{
+    color: #FFFFFF;
+    font-family: Century Gothic;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0.20000000298023224px;
+}
+.Media{
+    color: #FFFFFF;
+    font-size: 22px;
+}
+.Cards{
+    display: flex;
+    column-gap: 11px;
 }
